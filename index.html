@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Purchase Tickets</h1>
+      <hr>
+      <form id="new-customer">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="new-first-name">First Name:</label>
+              <input type="text"  class="form-control" id="new-first-name">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="new-last-name">Last Name:</label>
+              <input type="text"  class="form-control" id="new-last-name">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <h4>Select Movie</h4>
+            <select class="form-control" id="movies">
+              <option style="display:none;"></option>
+              <option value="1"><em>The Mushrooms Are Alive</em></option>   <!--rated R-->
+              <option value="2"><em>Cricket Box</em></option>    <!--first release-->
+              <option value="3"><em>The Land After Time</em></option>
+              <option value="4"><em>Flat Earth</em></option>     <!--matinee-->
+            </select>
+          </div>
+          <div class="col-md-4">
+            <h4>Select Show Time</h4>
+            <select class="form-control" id="times">
+              <option style="display:none;"></option>
+              <option value="1">11:30am</option>    <!--matinee-->
+              <option value="2">3:00pm</option>
+              <option value="3">6:45pm</option>
+              <option value="4">10:30pm</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <h4>Select Your Age Range</h4>
+            <select class="form-control" id="age">
+              <option style="display:none;"></option>
+              <option value="1">0-5</option>
+              <option value="2">6-17</option>
+              <option value="3">18-64</option>          <!--rated R-->
+              <option value="4">65 or older</option>     <!--senior discount-->
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn-primary">Submit Order</button>
+      </form>
+
+
+
+          <h3>Your purchase:</h3>
+          <ul id="purchase">
+          </ul>
+          <div id="show-ticket">
+            <p>Name: <span class="first-name"></span> <span class="last-name"></span></p>
+            <p>Movie: <span class="movie"></span></p>
+            <p>Show Time: <span class="show-time"></span></p>
+            <p>Age: <span class="age"></span></p>
+          </div>
+
+    </div>
+  </body>
+</html>
